@@ -12,7 +12,7 @@ mask = np.array([
 output_box = np.zeros((roi.shape[0],roi.shape[1]),dtype=np.uint8)
 #output_box = np.zeros((roi.shape[0],roi.shape[1])) #float
 
-for j in range(1,roi.shape[0]-1):
+for j in range(1,roi.shape[0]-1): #본격적인 시작
     for i in range(1,roi.shape[1]-1):
         sum = 0
         for r in range(-1,2):
@@ -29,3 +29,4 @@ cv.imshow('origin',roi_gray)
 cv.imshow('box_mask',output_box)
 cv.waitKey(0)
 cv.destroyAllWindows()
+#모서리 제어
