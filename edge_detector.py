@@ -30,3 +30,4 @@ cv.imshow('box_mask',output_box)
 cv.waitKey(0)
 cv.destroyAllWindows()
 #모서리 제어
+#추가 보충
